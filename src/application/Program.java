@@ -11,8 +11,9 @@ public class Program {
 	public static void main(String[] args) throws ParseException {
 
 		SellerDao sellerDao = DaoFactory.createSellerDao();
-		Seller seller = sellerDao.findById(8);
 		
+		System.out.println("---- Teste 1: Find By ID ----");
+		Seller seller = sellerDao.findById(8);
 		System.out.println(seller);
 	}
 

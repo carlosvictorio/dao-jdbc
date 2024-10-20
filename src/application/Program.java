@@ -3,7 +3,6 @@ package application;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.sql.Date;
 import java.util.List;
 
 import model.dao.DaoFactory;
@@ -40,6 +39,12 @@ public class Program {
 		Seller newSeller = new Seller(null, "Valdete", "val@gmail,com", sdf.parse("18/04/1979"), 5000.0, department2);
 		sellerDao.insert(newSeller);
 		System.out.println("id: " + newSeller.getId());
+		
+		System.out.println("\n----Teste 4: seller Update ----");
+		seller = sellerDao.findById(8);
+		seller.setName("Victorio Nogueira");
+		sellerDao.update(seller);
+		System.out.println("Update Complete");
 	}
 
 }

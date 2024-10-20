@@ -47,7 +47,8 @@ public class Program {
 		System.out.println("Update Complete");
 		
 		System.out.println("\n----Teste 5: seller Delete ----");
-		sellerDao.delete(11);
+		sellerDao.delete(56);
+		System.out.println("Delete completed");
 	}
 
 }

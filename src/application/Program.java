@@ -45,6 +45,9 @@ public class Program {
 		seller.setName("Victorio Nogueira");
 		sellerDao.update(seller);
 		System.out.println("Update Complete");
+		
+		System.out.println("\n----Teste 5: seller Delete ----");
+		sellerDao.delete(11);
 	}
 
 }
